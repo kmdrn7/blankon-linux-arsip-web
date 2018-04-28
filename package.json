@@ -18,7 +18,7 @@
     "build": "gulp",
     "clean": "gulp clean",
     "production": "(cd dist;../node_modules/.bin/lite-server)",
-    "dev": "(/node_modules/.bin/lite-server)"
+    "dev": "(cd src;../node_modules/.bin/lite-server)"
   },
   "repository": {
     "type": "git",
