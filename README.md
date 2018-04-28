@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tuanpembual/blankon-linux-static-web.svg?branch=master)](https://travis-ci.org/tuanpembual/blankon-linux-static-web)
+[![Build Status](https://api.travis-ci.org/kmdrn7/blankon-linux-arsip-web.svg?branch=master)](https://travis-ci.org/tuanpembual/blankon-linux-static-web)
 
 # Arsip BlankOn Linux
 Semua tentang BlankOn Linux bisa dilihat disini, mulai dari alamat repositori hingga cara menggunakannya.
