@@ -31,3 +31,6 @@ Perubahan atau kustomisasi dapat dilakukan di folder `src`. Tidak disarankan mel
 
 ## Catatan
 *Bila ada penambahan source maka lakukan perubahan pada file gulpfile, kemudian jalankan npm run build lagi untuk bisa menggunakan resource yang baru saja digunakan*.
+
+*file resource yang ada disini diambil dari repo resmi* 
+[BlankOn/blankon-linux-static-web](https://github.com/BlankOn/blankon-linux-static-web)
