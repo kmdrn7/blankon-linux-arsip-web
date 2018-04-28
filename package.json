@@ -1,32 +1,36 @@
 {
-  "name": "blankon-linux-static-web",
+  "name": "blankon-linux-arsip-web",
   "version": "1.0.0",
-  "description": "Ini adalah halaman antar muka untuk website BlankOn Linux",
-  "main": "index.js",
+  "description": "Halaman arsip untuk BlankOn Linux",
   "dependencies": {},
   "devDependencies": {
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-concat": "^2.6.0",
-    "gulp-minify": "0.0.14",
-    "gulp-uglify": "^2.0.0",
-    "lite-server": "^2.2.2"
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-inject": "^4.3.2",
+    "gulp-remove-html": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "lite-server": "^2.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "(cd dist;../node_modules/.bin/lite-server)",
-    "build": "./node_modules/.bin/gulp"
+    "build": "gulp && npm run production",
+    "clean": "gulp clean",    
+    "production": "(cd dist;../node_modules/.bin/lite-server)",
+    "dev": "(/node_modules/.bin/lite-server)"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BlankOn/blankon-linux-static-web.git"
+    "url": "https://github.com/kmdrn7/blankon-linux-arsip-web.git"
   },
-  "author": "Herpiko Dwi Aguno <herpiko@gmail.com>",
+  "author": "Andika Ahmad Ramadhan <aspendaaka@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlankOn/blankon-linux-static-web/issues"
+    "url": "https://github.com/kmdrn7/blankon-linux-arsip-web/issues"
   },
-  "homepage": "https://github.com/BlankOn/blankon-linux-static-web#readme"
+  "homepage": "https://github.com/kmdrn7/blankon-linux-arsip-web"
 }
