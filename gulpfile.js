@@ -1,13 +1,11 @@
 const gulp = require('gulp'),
-    uglify = require('gulp-uglify'),
-    cleanCss = require('gulp-clean-css'),
-    clean = require('gulp-clean'),
-    concat = require('gulp-concat'),
-    sass = require('gulp-sass'),
-    watch = require('gulp-watch'),
     del = require('del'),
-    inject = require('gulp-inject')
-    htmlreplace = require('gulp-html-replace');
+    clean = require('gulp-clean'),
+    cleanCss = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
+    htmlreplace = require('gulp-html-replace'),
+    sass = require('gulp-sass'),
+    uglify = require('gulp-uglify');
 
 var tasks = [
     'clean',
