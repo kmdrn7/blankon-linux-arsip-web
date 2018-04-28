@@ -1,3 +1,8 @@
+/*!
+ * script.js
+ * ---------
+ * ---------
+ */
 "use strict";
 
 //LOADER/SPINNER
@@ -36,5 +41,5 @@ $(document).ready(function () {
                 loop:false
             }
         }
-    });
+    });    
 });
