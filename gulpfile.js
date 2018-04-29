@@ -34,7 +34,9 @@ gulp.task('libs', () => {
             './src/js/jquery.js',
             './src/js/bootstrap.min.js',
             './src/js/owl.carousel.js',
-            './src/js/script.js',            
+            './src/js/anime.min.js',
+            './src/js/prism.js',
+            './src/js/script.js',
         ])
         .pipe(concat('libs.js'))
         .pipe(uglify())
