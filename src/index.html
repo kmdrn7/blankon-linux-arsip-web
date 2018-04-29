@@ -7,13 +7,13 @@
     <title>Arsip BlankOn Linux</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- build:css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.css">
-    <link rel="stylesheet" href="./css/owl.theme.css">
-    <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/Pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
 </head>
 
@@ -28,12 +28,12 @@
     </div>
     <!-- END PRELOADER -->
 
-    <!-- CONTAINER -->
-    <div class="container-fluid">
+    <!-- NAVBAR CONTAINER -->
+    <div class="container-fluid navbar-container">
         <!-- =========================
         START NAVIGATION SECTION
         ============================== -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -46,9 +46,8 @@
                     <a class="navbar-brand" href="#">
                         <div class="logo-header">
 
-                        </div>
-                        <img src="images/logo-putih.png" id="putih" alt="Logo" style="padding:10px; width:160px;height:auto;">
-                        <img src="images/logo-hitam.png" id="hitam" alt="Logo" style="padding:10px; width:130px;height:auto;">
+                        </div>                        
+                        <img src="images/logo-putih.png" id="logo" alt="Logo">
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,11 +63,99 @@
             </div>
             <!-- /.container- -->
         </nav>
-        <!-- END NAVIGATION -->
+        <!-- END NAVIGATION -->        
+    </div>
+    <!-- END CONTAINER -->        
 
-        <!-- =========================
-        START FOOTER SECTION
-        ============================== -->
+    <div class="container-fluid content-container">
+        <div class="container">
+            <!-- =========================
+            START WELCOME SECTION
+            ============================== -->
+            <section class="welcome" id="welcome">
+                <div class="row">
+                    <div class="col-md-5 text-right main-panel">
+                        <img class="boni-main" src="images/boni-2.png" alt="Boni.png">
+                    </div>
+                    <div class="col-md-7 text-left main-panel">
+                        <h2>Selamat Datang di Repositori <b style="border-bottom: 2px solid #333;">BlankOn</b><b> Linux</b></h2>
+                    </div>
+                </div>                
+            </section>
+
+            <!-- =========================
+            START LIST REPOSITORI SECTION
+            ============================== -->
+            <section class="list-section card card-4">
+                <div class="row">
+                    <div class="col-md-12 list-repo-col">                        
+                        <div class="inner_about_title">                            
+                            <div class="about-content">
+                                <span style="font-size: 50px;"><b>#</b></span> Alamat Repository dan Mirror BlankOn Linux
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="inner_about_desc">        
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area">
+                                <!-- HEADING DESCRIPTION -->                                
+                                <a href="http://arsip.blankonlinux.or.id/blankon/"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Server Utama</a><span>(HTTP)</span>
+                                <h4>Contoh Penggunaan kode sumber</h4>
+                                <p>
+                                    deb http://arsip.blankonlinux.or.id/blankon tambora main restricted<br> 
+                                    deb http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted<br> 
+                                    deb http://security.blankonlinux.or.id/blankon tambora-security main restricted <br>
+                                    deb-src http://arsip.blankonlinux.or.id/blankon tambora main restricted<br> 
+                                    deb-src http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted <br>
+                                    deb-src http://security.blankonlinux.or.id/blankon tambora-security main restricted
+                                </p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+        
+        
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area">                                
+                                <!-- HEADING DESCRIPTION -->
+                                <a href="http://kambing.ui.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Indonesia</a><span>(HTTP, FTP, RESYNC)</span>
+                                <h4>Contoh Penggunaan kode sumber</h4>
+                                <p>
+                                        deb http://kambing.ui.ac.id/blankon tambora main restricted <br>
+                                        deb http://kambing.ui.ac.id/blankon tambora-updates main restricted <br>
+                                        deb http://kambing.ui.ac.id/blankon tambora-security main restricted <br>
+                                        deb-src http://kambing.ui.ac.id/blankon tambora main restricted <br>
+                                        deb-src http://kambing.ui.ac.id/blankon tambora-updates main restricted <br>
+                                        deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted <br>
+                                </p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+        
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area">
+                                <!-- HEADING DESCRIPTION -->
+                                <a href="http://repo.ugm.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Gajah Mada</a><span>(HTTP, RESYNC)</span>
+                                <h4>Contoh Penggunaan kode sumber</h4>
+                                <p>
+                                        deb http://repo.ugm.ac.id/blankon tambora main restricted <br>
+deb http://repo.ugm.ac.id/blankon tambora-updates main restricted <br>
+deb http://repo.ugm.ac.id/blankon tambora-security main restricted <br>
+deb-src http://repo.ugm.ac.id/blankon tambora main restricted <br>
+deb-src http://repo.ugm.ac.id/blankon tambora-updates main restricted <br>
+deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted <br>
+                                </p>
+                            </div>
+                            <!-- END SINGLE DESC -->
+        
+                        </div>
+                    </div>
+                </div>                
+            </section>            
+        </div>        
+    </div>
+
+    <!-- =========================
+    START FOOTER SECTION
+    ============================== -->
+    <div class="container-fluid footer-container" style="padding: 0px">
         <section class="footer">            
             <div class="container">
                 <div class="row">
@@ -87,16 +174,15 @@
         </section>
         <!-- END FOOTER -->
     </div>
-    <!-- END CONTAINER -->
 
     <!-- =========================
     START SCRIPTS SECTION
     ============================== -->
     <!-- build:js -->
-    <script src="./js/jquery-3.1.1.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/owl.carousel.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/script.js"></script>
     <!-- endbuild -->
     <!-- END SCRIPT SECTION -->
 </body>
