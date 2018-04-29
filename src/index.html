@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css"/>
     <!-- endbuild -->
 </head>
 
@@ -33,7 +34,8 @@
         <!-- =========================
         START NAVIGATION SECTION
         ============================== -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-top: 0px; opacity: 1; background-color: rgba(59, 59, 59, 0.7);">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -74,11 +76,11 @@
             ============================== -->
             <section class="welcome" id="welcome">
                 <div class="row">
-                    <div class="col-md-5 text-right main-panel">
-                        <img class="boni-main" src="images/boni-2.png" alt="Boni.png">
+                    <div class="col-md-5 text-right main-panel" id="domNode">
+                        <img id="boni-pic" class="boni-main" src="images/boni-2.png" alt="Boni.png">
                     </div>
                     <div class="col-md-7 text-left main-panel">
-                        <h2>Selamat Datang di Repositori <b style="border-bottom: 2px solid #333;">BlankOn</b><b> Linux</b></h2>
+                        <h2 id="boni-text">Selamat Datang di Repositori <b style="border-bottom: 2px solid #333;">BlankOn</b><b> Linux</b></h2>
                     </div>
                 </div>                
             </section>
@@ -101,14 +103,24 @@
                                 <!-- HEADING DESCRIPTION -->                                
                                 <a href="http://arsip.blankonlinux.or.id/blankon/"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Server Utama</a><span>(HTTP)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <p>
+                                <pre data-src="prism.js" class=" language-markup">
+                                    <code class="language-markup">
+deb http://arsip.blankonlinux.or.id/blankon tambora main restricted 
+deb http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted 
+deb http://security.blankonlinux.or.id/blankon tambora-security main restricted 
+deb-src http://arsip.blankonlinux.or.id/blankon tambora main restricted
+deb-src http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted
+deb-src http://security.blankonlinux.or.id/blankon tambora-security main restricted
+                                    </code>
+                                </pre>
+                                <!-- <p>
                                     deb http://arsip.blankonlinux.or.id/blankon tambora main restricted<br> 
                                     deb http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted<br> 
                                     deb http://security.blankonlinux.or.id/blankon tambora-security main restricted <br>
                                     deb-src http://arsip.blankonlinux.or.id/blankon tambora main restricted<br> 
                                     deb-src http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted <br>
                                     deb-src http://security.blankonlinux.or.id/blankon tambora-security main restricted
-                                </p>
+                                </p> -->
                             </div>
                             <!-- END SINGLE DESC -->
         
@@ -118,14 +130,24 @@
                                 <!-- HEADING DESCRIPTION -->
                                 <a href="http://kambing.ui.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Indonesia</a><span>(HTTP, FTP, RESYNC)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <p>
+                                <pre data-src="prism.js" class=" language-markup">
+                                    <code class="language-markup">
+deb http://kambing.ui.ac.id/blankon tambora main restricted
+deb http://kambing.ui.ac.id/blankon tambora-updates main restricted
+deb http://kambing.ui.ac.id/blankon tambora-security main restricted
+deb-src http://kambing.ui.ac.id/blankon tambora main restricted
+deb-src http://kambing.ui.ac.id/blankon tambora-updates main restricted
+deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted
+                                    </code>
+                                </pre>
+                                <!-- <p>
                                         deb http://kambing.ui.ac.id/blankon tambora main restricted <br>
                                         deb http://kambing.ui.ac.id/blankon tambora-updates main restricted <br>
                                         deb http://kambing.ui.ac.id/blankon tambora-security main restricted <br>
                                         deb-src http://kambing.ui.ac.id/blankon tambora main restricted <br>
                                         deb-src http://kambing.ui.ac.id/blankon tambora-updates main restricted <br>
                                         deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted <br>
-                                </p>
+                                </p> -->
                             </div>
                             <!-- END SINGLE DESC -->
         
@@ -134,14 +156,24 @@
                                 <!-- HEADING DESCRIPTION -->
                                 <a href="http://repo.ugm.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Gajah Mada</a><span>(HTTP, RESYNC)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <p>
+                                <pre data-src="prism.js" class=" language-markup">
+                                    <code class="language-markup">
+deb http://repo.ugm.ac.id/blankon tambora main restricted
+deb http://repo.ugm.ac.id/blankon tambora-updates main restricted
+deb http://repo.ugm.ac.id/blankon tambora-security main restricted
+deb-src http://repo.ugm.ac.id/blankon tambora main restricted
+deb-src http://repo.ugm.ac.id/blankon tambora-updates main restricted
+deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted
+                                    </code>
+                                </pre>
+                                <!-- <p>
                                         deb http://repo.ugm.ac.id/blankon tambora main restricted <br>
 deb http://repo.ugm.ac.id/blankon tambora-updates main restricted <br>
 deb http://repo.ugm.ac.id/blankon tambora-security main restricted <br>
 deb-src http://repo.ugm.ac.id/blankon tambora main restricted <br>
 deb-src http://repo.ugm.ac.id/blankon tambora-updates main restricted <br>
 deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted <br>
-                                </p>
+                                </p> -->
                             </div>
                             <!-- END SINGLE DESC -->
         
@@ -183,6 +215,10 @@ deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted <br>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/anime.min.js"></script>
+
+    <script src="js/cus_animation.js"></script>
     <!-- endbuild -->
     <!-- END SCRIPT SECTION -->
 </body>
