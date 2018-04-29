@@ -31,7 +31,7 @@ gulp.task('styles', () => {
 
 gulp.task('libs', () => {
     gulp.src([
-            './src/js/jquery-3.3.1.js',
+            './src/js/jquery.js',
             './src/js/bootstrap.min.js',
             './src/js/owl.carousel.js',
             './src/js/script.js',            
