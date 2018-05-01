@@ -37,6 +37,36 @@ $(window).bind("load", function () {
     });
 });
 
+window.onload = function () {
+
+    var boniBootAnimation = anime({
+        targets: '#boni-pic',
+        translateX: -500,
+        direction: 'reverse',
+        delay: 3000,
+        duration: 1500,
+        easing: 'easeInOutExpo'
+    });
+
+    var welcomeTextBootAnimation = anime({
+        targets: '#boni-text',
+        translateX: 600,
+        direction: 'reverse',
+        delay: 3000,
+        duration: 1500,
+        easing: 'easeInOutExpo'
+    });
+
+    var navbarBootAnimation = anime({
+        targets: '.navbar',
+        translateY: -400,
+        direction: 'reverse',
+        delay: 3000,
+        duration: 1500,
+        easing: 'easeInOutExpo'
+    });
+}
+
 // MENU SECTION ACTIVE
 $(document).ready(function () {
     $(".navbar-nav li a").click(function () {
