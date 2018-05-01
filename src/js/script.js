@@ -8,6 +8,33 @@
 //LOADER/SPINNER
 $(window).bind("load", function () {
     $(".spn_hol").fadeOut(1000);
+
+    var domNode = anime({
+        targets: '#boni-pic',
+        translateX: -500,            
+        direction: 'reverse',
+        delay: 5000,
+        duration: 1500,
+        easing: 'easeInCubic'
+    });
+    
+    var domNode2 = anime({
+        targets: '#boni-text',
+        translateX: 600,
+        direction: 'reverse',            
+        delay: 5000,
+        duration: 1500,
+        easing: 'easeInCubic'
+    });
+    
+    var domNode_nav = anime({
+        targets: '.navbar',
+        translateY: -400,
+        direction: 'reverse',
+        delay: 5000,
+        duration: 1500,
+        easing: 'easeInCubic'
+    });
 });
 
 window.onload = function () {
@@ -48,4 +75,24 @@ $(document).ready(function () {
     });
 
     $('#tahun-sekarang').text(new Date().getFullYear());
+
+    $('.nav-menu-list').click(function(e){
+        e.preventDefault();
+        var section = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(section).offset().top-200
+        }, 800);
+    });
+
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+        'remove-trailing': true,
+        'remove-indent': true,
+        'left-trim': true,
+        'right-trim': true,
+        /*'break-lines': 80,
+        'indent': 2,
+        'remove-initial-line-feed': false,
+        'tabs-to-spaces': 4,
+        'spaces-to-tabs': 4*/
+    });    
 });

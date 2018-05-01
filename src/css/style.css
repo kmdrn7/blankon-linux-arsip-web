@@ -5,9 +5,22 @@
 body {
     background-color: rgba(100, 96, 96, 0.281);
 }
-.navbar-default {
-    /* background-color: rgba(10, 10, 10, 0.322); */
-    background-color: rgba(59, 59, 59, 0.7); /* True color from www.blankonlinux.or.id */
+
+/* Tetapkan posisi awal sebelum animasi */
+.navbar {
+    transform: translateY(-400px);    
+}
+#boni-pic {
+    transform: translateX(-600px);    
+}
+#boni-text {
+    transform: translateX(800px);    
+}
+
+.navbar-custom {
+    background-color: rgba(31, 31, 31, 0.884)!important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
+    border-bottom: none;
 }
 .navbar-container {
     height: 60px;
@@ -55,6 +68,17 @@ body {
     height:auto;
 }
 
+
+.row#repo,
+.row#panduan,
+.row#konstribusi {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.row#repo {
+    padding-top: 25px;
+}
+
 .list-section {
     background-color: whitesmoke;
     border-radius: 8px;
@@ -77,8 +101,21 @@ body {
     height: 100px;
     margin: auto;    
 }
+.markup {
+    /* width: 860px; */
+}
+.markup pre,
+.markup pre code {
+    max-width: 100%;
+}
+.markup pre code {
+    font-size: 14px;
+}
 .single_about_area {
     margin-bottom: 40px;
+}
+.single_about_area::last-child {
+    margin-bottom: 10px;
 }
 .single_about_area > a {
     font-size: 30px;

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/Pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/prism.css"/>
+    <link rel="stylesheet" href="css/style.css">
     <!-- endbuild -->
 </head>
 
@@ -30,11 +30,11 @@
     <!-- END PRELOADER -->
 
     <!-- NAVBAR CONTAINER -->
-    <div class="container-fluid navbar-container">
+    <div class="container-fluid navbar-container" id="beranda">
         <!-- =========================
         START NAVIGATION SECTION
         ============================== -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-top: 0px; opacity: 1; background-color: rgba(59, 59, 59, 0.7);">
+        <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -47,7 +47,7 @@
                     <a class="navbar-brand" href="#">
                         <div class="logo-header">
 
-                        </div>                        
+                        </div>
                         <img src="images/logo-putih.png" id="logo" alt="Logo">
                     </a>
                 </div>
@@ -55,18 +55,19 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <!-- NAV -->
-                        <li><a href="#repo">Repositori</a></li>
-                        <li><a href="#tutor">Tutorial</a></li>
-                        <li><a href="#kontribusi">Kontribusi</a></li>                        
+                        <li class="active"><a class="nav-menu-list" href="#beranda">Beranda</a></li>
+                        <li><a class="nav-menu-list" href="#repo">Repositori</a></li>
+                        <li><a class="nav-menu-list" href="#panduan">Panduan</a></li>
+                        <li><a class="nav-menu-list" href="#kontribusi">Kontribusi</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container- -->
         </nav>
-        <!-- END NAVIGATION -->        
+        <!-- END NAVIGATION -->
     </div>
-    <!-- END CONTAINER -->        
+    <!-- END CONTAINER -->
 
     <div class="container-fluid content-container">
         <div class="container">
@@ -88,49 +89,53 @@
             START LIST REPOSITORI SECTION
             ============================== -->
             <section class="list-section card card-4">
-                <div class="row">
-                    <div class="col-md-12 list-repo-col">                        
-                        <div class="inner_about_title">                            
+                <div class="row" id="repo">
+                    <div class="col-md-12 list-repo-col">
+                        <div class="inner_about_title">
                             <div class="about-content">
                                 <span style="font-size: 50px;"><b>#</b></span> Alamat Repository dan Mirror BlankOn Linux
                             </div>
                             <hr>
                         </div>
-                        <div class="inner_about_desc">        
+                        <div class="inner_about_desc">
                             <!-- SINGLE DESC -->
                             <div class="single_about_area">
-                                <!-- HEADING DESCRIPTION -->                                
+                                <!-- HEADING DESCRIPTION -->
                                 <a href="http://arsip.blankonlinux.or.id/blankon/"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Server Utama</a><span>(HTTP)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <pre data-src="prism.js" class=" language-markup">
-                                    <code class="language-markup">
-deb http://arsip.blankonlinux.or.id/blankon tambora main restricted 
-deb http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted 
-deb http://security.blankonlinux.or.id/blankon tambora-security main restricted 
-deb-src http://arsip.blankonlinux.or.id/blankon tambora main restricted
-deb-src http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted
-deb-src http://security.blankonlinux.or.id/blankon tambora-security main restricted
-                                    </code>
-                                </pre>
+                                <div class="markup language-bash">
+                                    <pre class="line-numbers">
+                                        <code>
+                                            deb http://arsip.blankonlinux.or.id/blankon tambora main restricted 
+                                            deb http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted 
+                                            deb http://security.blankonlinux.or.id/blankon tambora-security main restricted 
+                                            deb-src http://arsip.blankonlinux.or.id/blankon tambora main restricted
+                                            deb-src http://arsip.blankonlinux.or.id/blankon tambora-updates main restricted
+                                            deb-src http://security.blankonlinux.or.id/blankon tambora-security main restricted
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
                             <!-- END SINGLE DESC -->
         
         
                             <!-- SINGLE DESC -->
-                            <div class="single_about_area">                                
+                            <div class="single_about_area">
                                 <!-- HEADING DESCRIPTION -->
                                 <a href="http://kambing.ui.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Indonesia</a><span>(HTTP, FTP, RESYNC)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <pre data-src="prism.js" class=" language-markup">
-                                    <code class="language-markup">
-deb http://kambing.ui.ac.id/blankon tambora main restricted
-deb http://kambing.ui.ac.id/blankon tambora-updates main restricted
-deb http://kambing.ui.ac.id/blankon tambora-security main restricted
-deb-src http://kambing.ui.ac.id/blankon tambora main restricted
-deb-src http://kambing.ui.ac.id/blankon tambora-updates main restricted
-deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted
-                                    </code>
-                                </pre>
+                                <div class="markup language-bash">
+                                    <pre class="line-numbers">
+                                        <code>
+                                            deb http://kambing.ui.ac.id/blankon tambora main restricted
+                                            deb http://kambing.ui.ac.id/blankon tambora-updates main restricted
+                                            deb http://kambing.ui.ac.id/blankon tambora-security main restricted
+                                            deb-src http://kambing.ui.ac.id/blankon tambora main restricted
+                                            deb-src http://kambing.ui.ac.id/blankon tambora-updates main restricted
+                                            deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
                             <!-- END SINGLE DESC -->
         
@@ -139,23 +144,70 @@ deb-src http://kambing.ui.ac.id/blankon tambora-security main restricted
                                 <!-- HEADING DESCRIPTION -->
                                 <a href="http://repo.ugm.ac.id/blankon"><i class="fa fa-server" aria-hidden="true"></i>&nbsp; Universitas Gajah Mada</a><span>(HTTP, RESYNC)</span>
                                 <h4>Contoh Penggunaan kode sumber</h4>
-                                <pre data-src="prism.js" class=" language-markup">
-                                    <code class="language-markup">
-deb http://repo.ugm.ac.id/blankon tambora main restricted
-deb http://repo.ugm.ac.id/blankon tambora-updates main restricted
-deb http://repo.ugm.ac.id/blankon tambora-security main restricted
-deb-src http://repo.ugm.ac.id/blankon tambora main restricted
-deb-src http://repo.ugm.ac.id/blankon tambora-updates main restricted
-deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted
-                                    </code>
-                                </pre>
+                                <div class="markup language-bash">
+                                    <pre class="line-numbers">
+                                        <code>
+                                            deb http://repo.ugm.ac.id/blankon tambora main restricted
+                                            deb http://repo.ugm.ac.id/blankon tambora-updates main restricted
+                                            deb http://repo.ugm.ac.id/blankon tambora-security main restricted
+                                            deb-src http://repo.ugm.ac.id/blankon tambora main restricted
+                                            deb-src http://repo.ugm.ac.id/blankon tambora-updates main restricted
+                                            deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
                             <!-- END SINGLE DESC -->
-        
                         </div>
                     </div>
-                </div>                
-            </section>            
+                </div>   
+
+                <div class="row" id="panduan">
+                    <div class="col-md-12 list-repo-col">
+                        <div class="inner_about_title">
+                            <div class="about-content">
+                                <span style="font-size: 50px;"><b>#</b></span> Panduan Ubah Alamat Repositoi di BlankOn
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="inner_about_desc">
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area">
+                                <!-- HEADING DESCRIPTION -->
+                                <div class="markup language-bash">
+                                    <h4>
+                                        Untuk panduan mengubah repositori dari BlankOn Linux bisa dilihat <a href="https://panduan.blankonlinux.or.id/umum/tutorial-mengganti-repository-blankon/"><b>Disini</b></a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- END SINGLE DESC -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="kontribusi">
+                    <div class="col-md-12 list-repo-col">
+                        <div class="inner_about_title">
+                            <div class="about-content">
+                                <span style="font-size: 50px;"><b>#</b></span> Kontribusi di BlankOn Linux
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="inner_about_desc">
+                            <!-- SINGLE DESC -->
+                            <div class="single_about_area">
+                                <!-- HEADING DESCRIPTION -->
+                                <div class="markup language-bash">
+                                    <h5>
+                                        Untuk memulai berkontribusi di dalam project BlankOn Linux silahkan mengikuti petunjuk yang berada <a href="https://panduan.blankonlinux.or.id/umum/memulai-berkontribusi/"><b>Disini</b></a>                                        
+                                    </h5>
+                                </div>
+                            </div>
+                            <!-- END SINGLE DESC -->
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>        
     </div>
 
@@ -163,17 +215,17 @@ deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted
     START FOOTER SECTION
     ============================== -->
     <div class="container-fluid footer-container" style="padding: 0px">
-        <section class="footer">            
+        <section class="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="copy_right_text">                        
+                        <div class="copy_right_text">
                             <p>Copyright &copy; 2005-<span id="tahun-sekarang"></span> </br>Tim Pengembang BlankOn</a></p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="scroll_top">
-                            <a href="#BERANDA"><i class="fa fa-angle-up"></i></a>
+                            <a class="nav-menu-list" href="#beranda"><i class="fa fa-angle-up"></i></a>
                         </div>
                     </div>
                 </div>
@@ -187,12 +239,11 @@ deb-src http://repo.ugm.ac.id/blankon tambora-security main restricted
     ============================== -->
     <!-- build:js -->
     <script src="js/jquery.js"></script>
+    <script src="js/anime.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="js/prism.js"></script>    
     <script src="js/script.js"></script>
-    <script src="js/prism.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="js/cus_animation.js"></script>
     <!-- endbuild -->
     <!-- END SCRIPT SECTION -->
 </body>
